@@ -1,21 +1,21 @@
 {
-  "name": "node.template",
+  "name": "inject.importmap",
   "version": "1.0.0",
-  "description": "Template for Node Module Development",
+  "description": "Utility to Inject Importmap into HTML Document",
   "main": "index.js",
   "scripts": {
     "test": "jasmine --config=jasmine.json"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/FlippieCoetser/node.template.git"
+    "url": "https://github.com/FlippieCoetser/inject.importmap.git"
   },
   "author": "Flippie Coetser",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/FlippieCoetser/node.template/issues"
+    "url": "https://github.com/FlippieCoetser/inject.importmap/issues"
   },
-  "homepage": "https://github.com/FlippieCoetser/node.template#readme",
+  "homepage": "https://github.com/FlippieCoetser/inject.importmap#readme",
   "devDependencies": {
     "jasmine": "^5.0.0"
   }
