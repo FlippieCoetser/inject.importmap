@@ -1,4 +1,5 @@
 module.exports = function (wallaby) {
+  process.env.INIT_CWD = wallaby.localProjectDir;
   return {
     files: ["src/**/*.mjs"],
 
@@ -7,24 +8,6 @@ module.exports = function (wallaby) {
     env: {
       type: "node",
       runner: "node",
-    },
-    setup: function (wallaby) {
-      const jasmine = wallaby.testFramework;
-      const path = require("path");
-
-      const helperFile = path.join(
-        wallaby.localProjectDir,
-        "test",
-        "helpers",
-        "helper.js"
-      );
-
-      console.log(helperFile);
-      jasmine.loadConfig({
-        random: true,
-        stopSpecOnExpectationFailure: true,
-        helpers: [helperFile],
-      });
     },
   };
 };
