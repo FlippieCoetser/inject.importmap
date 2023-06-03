@@ -1,10 +1,14 @@
 {
   "name": "inject.importmap",
-  "version": "1.0.0",
+  "version": "1.0.9",
   "description": "Utility to Inject Importmap into HTML Document",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
-    "test": "jasmine --config=jasmine.json"
+    "test": "jasmine --config=jasmine.json",
+    "postinstall": "node ./src/cli.mjs"
+  },
+  "bin": {
+    "inject": "./src/cli.mjs"
   },
   "repository": {
     "type": "git",
@@ -18,5 +22,9 @@
   "homepage": "https://github.com/FlippieCoetser/inject.importmap#readme",
   "devDependencies": {
     "jasmine": "^5.0.0"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^1.2.3",
+    "boxen": "^7.1.0"
   }
 }
