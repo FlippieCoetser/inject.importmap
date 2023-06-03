@@ -29,3 +29,11 @@ describe("Given log imported", () => {
     });
   });
 });
+
+// TODO
+// Inject import map of all browser modules specified in the package.json file in HTML
+// Inject import map of all browser modules specified in the package.json file in Karma.conf.js
+// Inject import map of all browser modules specified in the package.json file in Wallaby.js
+// Do all inject via Post Install script if configuration provided in package.json
+// Do all injects via command line utility if no configuration provided in package.json
+// Write a log of all actions which was automatically performed
