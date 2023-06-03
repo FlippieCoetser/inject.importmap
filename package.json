@@ -1,6 +1,6 @@
 {
   "name": "inject.importmap",
-  "version": "1.0.10",
+  "version": "1.0.14",
   "description": "Utility to Inject Importmap into HTML Document",
   "main": "index.mjs",
   "scripts": {
@@ -22,5 +22,9 @@
   "homepage": "https://github.com/FlippieCoetser/inject.importmap#readme",
   "devDependencies": {
     "jasmine": "^5.0.0"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^1.2.3",
+    "boxen": "^7.1.0"
   }
 }
